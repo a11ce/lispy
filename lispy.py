@@ -16,6 +16,8 @@ def evalPrimitive(exp):
     #print(exp)
     if exp in symDict:
         return symDict[exp]
+    if callable(exp):
+        return exp
     return eval(exp)
 
 def parse(progL):
