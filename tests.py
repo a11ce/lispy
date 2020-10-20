@@ -18,6 +18,10 @@ def testMultiplication():
     assert(lispy.runProg("(* 2)") == 2)
     assert(lispy.runProg("(*)") == 1)
 
+def testSomeBuiltins():
+    assert(lispy.runProg("(print 3)") == None)
+    assert(lispy.runProg("(sum (list 2 3 1))") == 6)
+    
 #def testDivision():
     #assert(lispy.runProg("(/ 12 2)") == 6)
     #assert(lispy.runProg("(/ 12 2 3)") == 2)
