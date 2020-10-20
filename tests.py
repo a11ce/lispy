@@ -21,6 +21,9 @@ def testMultiplication():
 def testSomeBuiltins():
     assert(lispy.runProg("(print 3)") == None)
     assert(lispy.runProg("(sum (list 2 3 1))") == 6)
+    assert(lispy.runProg("(abs -1)") == 1)
+    assert(lispy.runProg("(len \"foo\")") == 3)
+    
     
 #def testDivision():
     #assert(lispy.runProg("(/ 12 2)") == 6)
