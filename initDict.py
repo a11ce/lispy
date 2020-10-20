@@ -7,4 +7,6 @@ symDict = {
     #'%': lambda *x: sum(x),
     #'**': lambda *x: sum(x),
     #'//': lambda *x: sum(x),
+
+    'list': lambda *x: list(x)
 }
