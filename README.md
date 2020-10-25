@@ -1,6 +1,6 @@
 # lisPy
 
-> A lisp which works within python 
+> A lisp inside python.
 
 ## Setup
 
