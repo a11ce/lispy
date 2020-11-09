@@ -25,7 +25,7 @@ def testSomeBuiltins():
     assert(lispy.runProg("(len \"foo\")") == 3)
     
     
-#def testDivision():
-    #assert(lispy.runProg("(/ 12 2)") == 6)
-    #assert(lispy.runProg("(/ 12 2 3)") == 2)
-    #assert(lispy.runProg("(/ 3)") == 1/3)
+def testDivision():
+    assert(lispy.runProg("(/ 12 2)") == 6)
+    assert(lispy.runProg("(/ 12 2 3)") == 2)
+    assert(lispy.runProg("(/ 3)") == 1/3)
