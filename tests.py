@@ -47,3 +47,11 @@ def testLambda():
     assert (lispy.runProg("(map (lambda (x) (* x 2)) (list 1 2 3 4))") == [
         2, 4, 6, 8
     ])
+
+
+def testDef():
+    # TODO temporary global dict for testing
+    assert (lispy.runProg("(def x 3)") == 3)
+    assert (lispy.runProg("(+ 1 x)") == 4)
+    lispy.runProg("(def double (lambda (x) (* x 2)))")
+    assert (lispy.runProg("(double x)") == 6)
